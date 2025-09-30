@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Papa Leo's Pizza</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/pizzaicon.jpg" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="pizza-styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <img src="images/pizzaguy.jpg" alt="image of pizzaguy" />
+        <h1>Papa Leo's Pizza</h1>
+        <p id="tagline">Serving GRC students for 50 years!</p>
+        <hr />
+        <p>
+          "Freshly baked, cheesy, and topped with your favorites—order the pizza
+          that delivers happiness in every slice!"
+        </p>
+        <a id="contact-button" href="#" role="button">Contact Us</a>
+      </header>
+      <form id="pizza-form" action="#" method="get">
+        <!-- Contact Info -->
+        <fieldset>
+          <legend>Contact Info</legend>
+          <label for="fname">First Name:</label>
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            required
+            placeholder="Enter first name"
+            width="100%"
+          />
+          <br />
+          <label for="lname">Last Name:</label>
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            required
+            placeholder="Enter last name"
+            width="100%"
+          />
+          <br />
+          <label for="myEmail">Email address:</label>
+          <input type="email" required placeholder="Enter email" width="100%" />
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
