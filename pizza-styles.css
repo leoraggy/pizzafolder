@@ -1,4 +1,6 @@
 body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, sans-serif;
   background-color: darkred;
 }
 
@@ -6,7 +8,7 @@ main {
   background-color: white;
   width: 70%;
   margin: 0 auto 1rem auto;
-  padding: 0 1rem 100% 1rem;
+  padding: 0 1rem 2rem 1rem;
 }
 
 header {
@@ -26,18 +28,18 @@ header h1 {
 }
 
 #contact-button {
+  border: none;
   background-color: darkgreen;
   color: white;
   border-radius: 0.25rem;
-  border: none;
-  font-size: x-large;
-  text-decoration: none;
   padding: 0.5rem 0.75rem;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 #tagline {
-  font-size: xx-large;
-  font-weight: 600;
+  font-size: 1.25rem;
+  font-weight: 300;
 }
 
 fieldset {
@@ -52,4 +54,12 @@ legend {
   font-size: 1.5rem;
   padding-left: 1rem;
   width: 100%;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  box-sizing: border-box;
 }

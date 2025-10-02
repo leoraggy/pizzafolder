@@ -24,6 +24,7 @@
         <a id="contact-button" href="#" role="button">Contact Us</a>
       </header>
       <form id="pizza-form" action="#" method="get">
+
         <!-- Contact Info -->
         <fieldset>
           <legend>Contact Info</legend>
@@ -50,6 +51,65 @@
           <label for="myEmail">Email address:</label>
           <input type="email" required placeholder="Enter email" width="100%" />
         </fieldset>
+
+        <!-- Pickup or Delivery -->
+        <fieldset>
+          <legend>Select Pickup or Delivery</legend>
+          <input type="radio" id="pickup" name="method" value="pickup" />
+          <label for="pickup">Pickup</label><br />
+          <input type="radio" id="delivery" name="method" value="delivery" />
+          <label for="pickup">Delivery</label><br />
+        </fieldset>
+
+        <!-- Toppings -->
+        <fieldset>
+          <legend>Select Toppings</legend>
+          <input
+            type="checkbox"
+            id="pepporoni"
+            name="toppings[]"
+            value="pepporoni"
+          />
+          <label for="pepporoni">Pepporoni</label><br />
+          <input
+            type="checkbox"
+            id="pinnaple"
+            name="toppings[]"
+            value="pinnaple"
+          />
+          <label for="pinnaple">Pinnaple</label><br />
+          <input
+            type="checkbox"
+            id="greenpepper"
+            name="toppings[]"
+            value="greenpepper"
+          />
+          <label for="greenpepper">Green Pepper</label><br />
+          <input
+            type="checkbox"
+            id="sausage"
+            name="toppings[]"
+            value="sausage"
+          />
+          <label for="sausage">Sausage<br />
+
+            <!-- Pizza Size -->
+        </fieldset>
+
+         <fieldset>
+          <legend>Pizza Size</legend>
+          <select name="size" id="size">
+            <option value="none">-- Select a Size --</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+         </fieldset>
+
+
+        <!-- Add an Order Buttom -->
+        <button type="submit" id="contact-button">Submit Order</button>
+       
       </form>
     </main>
   </body>
