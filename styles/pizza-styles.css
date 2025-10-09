@@ -19,6 +19,7 @@ header {
 header img {
   float: right;
   max-width: 200px;
+  border-radius: 25%;
 }
 
 header h1 {
