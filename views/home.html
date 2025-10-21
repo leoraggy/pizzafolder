@@ -5,13 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Papa Leo's Pizza</title>
 
-    <!-- Link to JavaSript -->
     <script src="/js/pizza.js" defer></script>
 
-    <!-- Favicon -->
     <link rel="icon" href="/images/pizzaicon.jpg" />
 
-    <!-- Stylesheet -->
     <link rel="stylesheet" href="/styles/pizza-styles.css" />
   </head>
   <body>
@@ -25,11 +22,9 @@
           "Freshly baked, cheesy, and topped with your favorites—order the pizza
           that delivers happiness in every slice!"
         </p>
-        <a id="contact-button" href="#" role="button">Contact Us</a>
+        <a id="contact-button" href="/contact-us" role="button">Contact Us</a>
       </header>
-      <form id="pizza-form" action="#" method="get">
-
-        <!-- Contact Info -->
+      <form id="pizza-form" action="submit-order" method="post">
         <fieldset>
           <legend>Contact Info</legend>
           <label for="fname">First Name:</label>
@@ -39,7 +34,6 @@
             id="fname"
             name="fname"
             placeholder="Enter first name"
-            width="100%"
           />
           <br />
           <label for="lname">Last Name:</label>
@@ -49,29 +43,25 @@
             id="lname"
             name="lname"
             placeholder="Enter last name"
-            width="100%"
           />
           <br />
           <label for="myEmail">Email address:</label>
-            <span id="err-email" class="error">Email needs to be valid!</span>
-          <input type="email" placeholder="Enter email" width="100%" id="myEmail" />
+          <span id="err-email" class="error">Email needs to be valid!</span>
+          <input type="email" placeholder="Enter email" id="myEmail" />
         </fieldset>
 
-        <!-- Pickup or Delivery -->
-         
         <fieldset>
           <legend>Select Pickup or Delivery</legend>
           <span id="err-method" class="error">Please choose a method!</span>
           <input type="radio" id="pickup" name="method" value="pickup" />
           <label for="pickup">Pickup</label><br />
           <input type="radio" id="delivery" name="method" value="delivery" />
-          <label for="pickup">Delivery</label><br />
+          <label for="delivery">Delivery</label><br />
         </fieldset>
 
-        <!-- Toppings -->
         <fieldset>
           <legend>Select Toppings</legend>
-           <span id="err-topping" class="error">Please choose a topping!</span>
+          <span id="err-topping" class="error">Please choose a topping!</span>
           <input
             type="checkbox"
             id="pepporoni"
@@ -99,19 +89,20 @@
             name="toppings[]"
             value="sausage"
           />
-          <label for="sausage">Sausage<br />
+          <label for="sausage">Sausage</label>
+          <br />
         </fieldset>
 
-         <fieldset>
+        <fieldset>
           <legend>Pizza Size</legend>
+          <span id="err-size" class="error">Please select a size!</span>
           <select name="size" id="size">
             <option value="none">-- Select a Size --</option>
             <option value="small">Small</option>
             <option value="medium">Medium</option>
             <option value="large">Large</option>
           </select>
-         </fieldset>
-        <!-- Add an Order Buttom -->
+        </fieldset>
         <button type="submit" id="contact-button">Submit Order</button>
       </form>
     </main>
