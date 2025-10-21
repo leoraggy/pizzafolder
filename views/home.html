@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Papa Leo's Pizza</title>
+
+    <!-- Link to JavaSript -->
+    <script src="/js/pizza.js" defer></script>
+
     <!-- Favicon -->
     <link rel="icon" href="/images/pizzaicon.jpg" />
 
@@ -29,32 +33,35 @@
         <fieldset>
           <legend>Contact Info</legend>
           <label for="fname">First Name:</label>
+          <span id="err-fname" class="error">First name cannot be empty!</span>
           <input
             type="text"
             id="fname"
             name="fname"
-            required
             placeholder="Enter first name"
             width="100%"
           />
           <br />
           <label for="lname">Last Name:</label>
+          <span id="err-lname" class="error">Last name cannot be empty!</span>
           <input
             type="text"
             id="lname"
             name="lname"
-            required
             placeholder="Enter last name"
             width="100%"
           />
           <br />
           <label for="myEmail">Email address:</label>
-          <input type="email" required placeholder="Enter email" width="100%" />
+            <span id="err-email" class="error">Email needs to be valid!</span>
+          <input type="email" placeholder="Enter email" width="100%" id="myEmail" />
         </fieldset>
 
         <!-- Pickup or Delivery -->
+         
         <fieldset>
           <legend>Select Pickup or Delivery</legend>
+          <span id="err-method" class="error">Please choose a method!</span>
           <input type="radio" id="pickup" name="method" value="pickup" />
           <label for="pickup">Pickup</label><br />
           <input type="radio" id="delivery" name="method" value="delivery" />
@@ -64,6 +71,7 @@
         <!-- Toppings -->
         <fieldset>
           <legend>Select Toppings</legend>
+           <span id="err-topping" class="error">Please choose a topping!</span>
           <input
             type="checkbox"
             id="pepporoni"
@@ -92,8 +100,6 @@
             value="sausage"
           />
           <label for="sausage">Sausage<br />
-
-            <!-- Pizza Size -->
         </fieldset>
 
          <fieldset>
@@ -105,11 +111,8 @@
             <option value="large">Large</option>
           </select>
          </fieldset>
-
-
         <!-- Add an Order Buttom -->
         <button type="submit" id="contact-button">Submit Order</button>
-       
       </form>
     </main>
   </body>
