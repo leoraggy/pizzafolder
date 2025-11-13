@@ -27,7 +27,14 @@
         </p>
         <a id="contact-button" href="#" role="button">Contact Us</a>
       </header>
-      <h1>Admin page</h1>
+      <h1>Thank you for confirming the order, <%= order.fname %>!</h1>
+      <h2>Order Summary</h2>
+      <p>Name: <%= order.fname %></p>
+      <p>Last Name: <%= order.lname %></p>
+      <p>Email: <%= order.email %></p>
+      <p>Size: <%= order.size %></p>
+      <p>Comment: <%= order.Comment %></p>
+      <p>Date/Time <%= order.timestamp.toLocaleString() %></p>
     </main>
   </body>
 </html>

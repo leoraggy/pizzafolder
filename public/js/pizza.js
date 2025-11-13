@@ -6,7 +6,7 @@ document.getElementById("pizza-form").onsubmit = () => {
 
   let fname = document.getElementById("fname").value.trim();
   let lname = document.getElementById("lname").value.trim();
-  let email = document.getElementById("myEmail").value.trim();
+  let email = document.getElementById("email").value.trim();
 
   if (!fname) {
     isValid = false;
